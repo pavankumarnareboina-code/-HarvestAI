@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarvestAI - Smart Agriculture Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>HarvestAI</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link" id="loginBtn">Login</a></li>
+                    <li><a href="#register" class="nav-link">Register</a></li>
+                    <li><a href="#feedback" class="nav-link">Feedback</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Popup Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-sign-in-alt"></i> Login to HarvestAI</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername"><i class="fas fa-user"></i> Username</label>
+                    <input type="text" id="loginUsername" placeholder="Enter your username">
+                    <span class="error-message" id="loginUsernameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                    <span class="error-message" id="loginPasswordError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> Login
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-overlay"></div>
+        <div class="container">
+            <div class="home-content">
+                <h1 class="animate-fade-in">Empowering Farmers with AI Technology</h1>
+                <p class="animate-fade-in-delay">Transform your farming with intelligent crop advisory, weather predictions, and smart pest detection powered by artificial intelligence</p>
+                <div class="home-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Explore Features
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+                <div class="home-stats">
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>Active Farmers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Accuracy Rate</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>AI Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-leaf"></i> About HarvestAI</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Revolutionizing Agriculture Through Artificial Intelligence</h3>
+                    <p>HarvestAI is a cutting-edge Smart Agriculture platform designed to empower farmers with advanced AI-powered tools and insights. Our mission is to bridge the technology gap in farming and help agricultural communities make data-driven decisions for better crop yields and sustainable farming practices.</p>
+                    
+                    <p><strong>Purpose:</strong> To provide farmers with accessible, intelligent farming solutions that increase productivity, reduce crop losses, and promote sustainable agricultural practices through the power of artificial intelligence and machine learning.</p>
+                    
+                    <p><strong>Who is it for?</strong> HarvestAI serves small-scale farmers, agricultural cooperatives, agri-business owners, and farming communities who want to leverage modern technology to optimize their farming operations.</p>
+                    
+                    <p><strong>Why is it useful?</strong> Our platform combines real-time weather data, soil analysis, pest detection, and crop health monitoring to provide actionable insights that help farmers maximize yields, minimize losses, and make informed decisions about planting, irrigation, and harvesting.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600" alt="Smart Farming with AI">
+                    <div class="about-badge">
+                        <i class="fas fa-award"></i>
+                        <span>AI Powered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-cogs"></i> Our AI-Powered Services</h2>
+                <div class="divider"></div>
+                <p>Comprehensive smart farming solutions powered by advanced AI technology</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Forecasting</h3>
+                    <p>AI-powered weather predictions with 98% accuracy. Get real-time alerts for rain, temperature changes, and extreme weather conditions to plan your farming activities effectively.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 15-day advance forecasts</li>
+                        <li><i class="fas fa-check"></i> SMS & app notifications</li>
+                        <li><i class="fas fa-check"></i> Regional climate insights</li>
+                    </ul>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Smart Pest Detection</h3>
+                    <p>Upload crop images and let our AI identify pests and diseases instantly. Get treatment recommendations and preventive measures to protect your harvest.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Image-based diagnosis</li>
+                        <li><i class="fas fa-check"></i> 200+ pest database</li>
+                        <li><i class="fas fa-check"></i> Treatment solutions</li>
+                    </ul>
+                    <button class="btn btn-primary">Try Now</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Crop Advisory System</h3>
+                    <p>Personalized crop recommendations based on soil type, weather patterns, and market demand. Maximize profitability with data-driven crop selection and planning.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Soil analysis insights</li>
+                        <li><i class="fas fa-check"></i> Market price trends</li>
+                        <li><i class="fas fa-check"></i> Planting schedules</li>
+                    </ul>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Smart Irrigation</h3>
+                    <p>AI-optimized irrigation recommendations that save water and improve crop health. Get alerts on when and how much to irrigate based on real-time soil moisture data.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Water usage optimization</li>
+                        <li><i class="fas fa-check"></i> Moisture monitoring</li>
+                        <li><i class="fas fa-check"></i> Automated schedules</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Soil Health Analysis</h3>
+                    <p>Comprehensive soil testing and nutrient analysis powered by AI. Receive customized fertilizer recommendations to improve soil quality and crop productivity.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> NPK level tracking</li>
+                        <li><i class="fas fa-check"></i> pH monitoring</li>
+                        <li><i class="fas fa-check"></i> Fertilizer suggestions</li>
+                    </ul>
+                    <button class="btn btn-outline">Analyze Now</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Expert Consultation</h3>
+                    <p>Connect with agricultural experts and AI chatbots for instant farming advice. Get answers to your queries in multiple languages, available 24/7.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Multi-language support</li>
+                        <li><i class="fas fa-check"></i> AI chatbot assistance</li>
+                        <li><i class="fas fa-check"></i> Video consultations</li>
+                    </ul>
+                    <button class="btn btn-outline">Chat Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section id="register" class="register-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-user-plus"></i> Create Your Account</h2>
+                <div class="divider"></div>
+                <p>Join thousands of farmers using AI to transform their agriculture</p>
+            </div>
+            <div class="register-content">
+                <div class="register-form-container">
+                    <form id="registerForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regName"><i class="fas fa-user"></i> Full Name</label>
+                                <input type="text" id="regName" placeholder="Enter your full name">
+                                <span class="error-message" id="regNameError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                                <input type="email" id="regEmail" placeholder="Enter your email">
+                                <span class="error-message" id="regEmailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regPassword"><i class="fas fa-lock"></i> Password</label>
+                                <input type="password" id="regPassword" placeholder="Create a strong password">
+                                <span class="error-message" id="regPasswordError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regConfirmPassword"><i class="fas fa-lock"></i> Confirm Password</label>
+                                <input type="password" id="regConfirmPassword" placeholder="Re-enter your password">
+                                <span class="error-message" id="regConfirmPasswordError"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-check-circle"></i> Register Now
+                        </button>
+                    </form>
+                </div>
+                <div class="register-info">
+                    <h3>Why Join HarvestAI?</h3>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Free Access</h4>
+                            <p>Start with our free plan and upgrade anytime</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>AI-Powered Insights</h4>
+                            <p>Get intelligent recommendations daily</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Expert Support</h4>
+                            <p>24/7 assistance from farming experts</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Community Access</h4>
+                            <p>Connect with 50,000+ farmers nationwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-comment-dots"></i> We Value Your Feedback</h2>
+                <div class="divider"></div>
+                <p>Help us improve our services by sharing your thoughts</p>
+            </div>
+            <div class="feedback-content">
+                <form id="feedbackForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="feedbackName"><i class="fas fa-user"></i> Your Name</label>
+                            <input type="text" id="feedbackName" placeholder="Enter your name">
+                            <span class="error-message" id="feedbackNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackEmail"><i class="fas fa-envelope"></i> Your Email</label>
+                            <input type="email" id="feedbackEmail" placeholder="Enter your email">
+                            <span class="error-message" id="feedbackEmailError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackMessage"><i class="fas fa-message"></i> Your Message</label>
+                        <textarea id="feedbackMessage" rows="6" placeholder="Share your feedback, suggestions, or concerns..."></textarea>
+                        <span class="error-message" id="feedbackMessageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Feedback
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>HarvestAI</span>
+                    </div>
+                    <p>Empowering farmers with AI technology for smarter, sustainable agriculture.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#feedback">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Weather Forecasting</a></li>
+                        <li><a href="#services">Pest Detection</a></li>
+                        <li><a href="#services">Crop Advisory</a></li>
+                        <li><a href="#services">Soil Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HarvestAI - Smart Agriculture Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script (1).js"></script>
+</body>
+</html>
